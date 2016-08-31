@@ -23,8 +23,6 @@
             pageList = [];
 
         return function (input, pageCount, maxPageLength, currentPage) {
-            pageCount = parseInt(pageCount);
-
             if (pageCount !== lastPageCount || maxPageLength !== lastMaxPageLength || currentPage !== lastCurrentPage) {
                 lastPageCount = pageCount;
                 lastMaxPageLength = maxPageLength;
@@ -32,6 +30,9 @@
                 pageList = [];
 
                 pageCount = parseInt(pageCount);
+                if (isNaN(pageCount)) {
+                    return pageList;
+                }
 
                 if (!maxPageLength || pageCount <= parseInt(maxPageLength)) {
                     for (var i = 0; i < pageCount; i++) {

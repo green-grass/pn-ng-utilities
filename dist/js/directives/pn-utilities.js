@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var module = angular.module('pnUtilities', []);
+    var module = angular.module('pnUtilities');
 
     module.directive('pnButtonsPagination', function () {
         return {
