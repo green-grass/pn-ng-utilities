@@ -1,0 +1,36 @@
+{
+  "name": "pn-ng-utilities",
+  "version": "1.0.0-rc1-0",
+  "description": "PhantomNet AngularJS utility components",
+  "main": "./dist/**/*.*",
+  "authors": [
+    "Minh Nguyen <mnguyen284@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "PhantomNet",
+    "AngularJS"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "https://github.com/green-grass/pn-ng-utilities",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 2.0.0",
+    "angular-ui-select": ">= 0.18.0",
+    "ng-focus-if": ">= 1.0.0",
+    "pn-inheritance": ">= 0.0.0",
+    "pn-ng-resource": ">= 0.0.0",
+    "pn-ng-animate": ">= 0.0.0",
+    "pn-ng-search": ">= 0.0.0",
+    "pn-ng-locale": ">= 0.0.0",
+    "pn-ng-contenteditable": ">= 0.0.0"
+  }
+}

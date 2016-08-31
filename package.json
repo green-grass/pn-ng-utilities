@@ -1,0 +1,14 @@
+{
+  "name": "pn-ng-utilities",
+  "description": "PhantomNet AngularJS utility components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-grass/pn-ng-utilities.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "1.2.0",
+    "rimraf": "2.2.8"
+  }
+}
