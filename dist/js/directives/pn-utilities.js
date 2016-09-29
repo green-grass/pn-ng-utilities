@@ -37,7 +37,7 @@
         };
     });
 
-    module.directive('pnCombinedPagination', ['$animate', function ($animate) {
+    module.directive('pnCombinedPagination', function () {
         return {
             restrict: 'EA',
             replace: true,
@@ -54,6 +54,6 @@
                 scope.showPageJumper = false;
             }
         };
-    }]);
+    });
 
 })();
