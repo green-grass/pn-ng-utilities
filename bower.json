@@ -1,6 +1,6 @@
 {
   "name": "pn-ng-utilities",
-  "version": "1.0.0-rc1-3",
+  "version": "1.0.0-rc1-4",
   "description": "PhantomNet AngularJS utility components",
   "main": "./dist/**/*.*",
   "authors": [
