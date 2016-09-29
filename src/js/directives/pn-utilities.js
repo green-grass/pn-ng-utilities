@@ -10,14 +10,14 @@
             replace: true,
             scope: {
                 pageCount: '&',
-                pageNumber: '=',
+                currentPage: '=',
                 maxPageLength: '&',
                 pageLabelFormat: '&'
             },
             templateUrl: '/assets/_vendors/pn-ng-utilities/dist/templates/pn-buttons-pagination.html',
             link: function (scope) {
-                scope.goToPage = function (pageNumber) {
-                    scope.pageNumber = pageNumber;
+                scope.goToPage = function (page) {
+                    scope.currentPage = page;
                 };
             }
         };
