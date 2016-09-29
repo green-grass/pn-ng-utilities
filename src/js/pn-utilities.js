@@ -2,6 +2,8 @@
 
     'use strict';
 
-    angular.module('pnUtilities', []);
+    angular.module('pnUtilities', [
+        'pnAnimate'
+    ]);
 
 })();
