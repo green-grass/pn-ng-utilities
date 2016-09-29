@@ -3,14 +3,16 @@
          page-count="pageCount()"
          current-page="currentPage"
          max-page-length="maxPageLength()"
-         page-label-format="pageLabelFormat">
+         page-label-format="pageLabelFormat({ page: page })">
     </div>
     <div class="text-center text-muted" ng-show="pageCount() > maxPageLength()">
         <div pn-dropdown-pagination
              class="pn-animate-height"
              ng-show="showPageJumper && "
              page-count="pageCount()"
-             current-page="currentPage">
+             current-page="currentPage"
+             prefix-format="jumperPrefixFormat({ count: count })"
+             subfix-format="jumperSubfixFormat({ count: count })">
         </div>
         <div>
             <a href="javascript:void(0)"

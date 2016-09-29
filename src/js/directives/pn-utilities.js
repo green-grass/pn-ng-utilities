@@ -10,7 +10,9 @@
             replace: true,
             scope: {
                 pageCount: '&',
-                currentPage: '='
+                currentPage: '=',
+                prefixFormat: "&",
+                subfixFormat: "&"
             },
             templateUrl: '/assets/_vendors/pn-ng-utilities/dist/templates/pn-dropdown-pagination.html'
         };
@@ -43,9 +45,11 @@
                 pageCount: '&',
                 currentPage: '=',
                 maxPageLength: '&',
-                pageLabelFormat: '&'
+                pageLabelFormat: '&',
+                jumperPrefixFormat: "&",
+                jumperSubfixFormat: "&"
             },
-            templateUrl: '/assets/_vendors/pn-ng-dashboard/dist/templates/pn-combined-pagination.html',
+            templateUrl: '/assets/_vendors/pn-ng-utilities/dist/templates/pn-combined-pagination.html',
             link: function (scope, element) {
                 scope.showPageJumper = false;
             }
